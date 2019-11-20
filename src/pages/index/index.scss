@@ -1,0 +1,2 @@
+// @import "~taro-ui/dist/style/index.scss"; // 在局部引入全部样式, 错误做法
+@import "~taro-ui/dist/style/components/button.scss"; // 在页面 按需引入样式 button, - 方式三

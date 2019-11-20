@@ -2,6 +2,8 @@ import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
 
+import { AtButton } from 'taro-ui' // 每个组件, 或页面, 都需要 import 相应的组件
+
 export default class Index extends Component {
 
   /**
@@ -15,20 +17,24 @@ export default class Index extends Component {
     navigationBarTitleText: '首页'
   }
 
-  componentWillMount () { }
+  componentWillMount() { }
 
-  componentDidMount () { }
+  componentDidMount() { }
 
-  componentWillUnmount () { }
+  componentWillUnmount() { }
 
-  componentDidShow () { }
+  componentDidShow() { }
 
-  componentDidHide () { }
+  componentDidHide() { }
 
-  render () {
+  render() {
     return (
       <View className='index'>
         <Text>Hello world!</Text>
+        <view>
+          <AtButton>按钮</AtButton>
+        </view>
+
       </View>
     )
   }
